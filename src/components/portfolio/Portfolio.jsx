@@ -86,6 +86,8 @@ const data = [
   },
 ];
 
+
+
 const portfolio = () => {
   return (
     <section id="portfolio">
