@@ -55,20 +55,20 @@ const Services = () => {
 
         <article className="service">
           <div className="service-head">
-            <h3>Content Creation</h3>
+            <h3>Video Editing</h3>
           </div>
           <ul className="service-list">
             <li>
               <BiCheck className="service-list-icon" />
-              <p>Simple Video Editing</p>
+              <p>Adobe Premiere Pro</p>
             </li>
             <li>
               <BiCheck className="service-list-icon" />
-              <p>Content Ideas For Youtube Videos</p>
+              <p>Adobe After Effects</p>
             </li>
             <li>
               <BiCheck className="service-list-icon" />
-              <p>Great Practices To Make Your Lonkedin Profile Awesome</p>
+              <p>Tik-Tok/Instagram Reels</p>
             </li>
           </ul>
         </article>

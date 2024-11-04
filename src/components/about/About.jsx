@@ -23,7 +23,7 @@ const About = () => {
             <article className="about-card">
               <FaAward className="about-icon" />
               <h5>Experience</h5>
-              <small>1+ Years Working</small>
+              <small>2+ Years Working</small>
             </article>
             <article className="about-card">
               <FiUsers className="about-icon" />
@@ -41,7 +41,7 @@ const About = () => {
             Hello! I am Jeko and I'm happy to share little information about
             myself. In the realm of web development, where innovation and
             creativity flourish, I, am a passionate and motivated individual
-            ready to embark on new challenges. At the tender age of 20, I bring
+            ready to embark on new challenges. At the tender age of 22, I bring
             a youthful energy and a burning desire to excel in the field. Driven
             by a relentless pursuit of excellence, I approach every task with
             unwavering determination, fueled by the belief that no goal is too

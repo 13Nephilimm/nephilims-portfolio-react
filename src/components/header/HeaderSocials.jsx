@@ -5,10 +5,7 @@ import { FaGithub, FaInstagram } from "react-icons/fa";
 const HeaderSocials = () => {
   return (
     <div className="header-socials">
-      <a
-        href="https://www.linkedin.com/in/jeko-kharabadze-506374235/"
-        target="_blank"
-      >
+      <a href="https://www.linkedin.com/in/jeko-kharabadze/" target="_blank">
         <BsLinkedin />
       </a>
       <a href="https://github.com/13Nephilimm" target="_blank">
