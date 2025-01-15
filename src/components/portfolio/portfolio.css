@@ -43,11 +43,21 @@
   gap: 1rem;
 }
 
+.see-more-portfolio {
+  grid-column: 2/3;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
 /* ============== MEDIA QUERIES (MEDIUM DEVICES) ============== */
 @media screen and (max-width: 1024px) {
   .portfolio-container {
     grid-template-columns: 1fr 1fr;
     gap: 1.2rem;
+  }
+
+  .see-more-portfolio {
+    grid-column: 1/1;
   }
 }
 
