@@ -33,7 +33,7 @@ const Experience = () => {
                   Frontend Developer <br />
                 </small>
                 <small className="text-light">
-                  Working with <strong>Vue JS, CSS, Bootstrap</strong>
+                  Working with <strong>Vue JS, CSS, Bootstrap, REST API</strong>
                 </small>
               </div>
             </article>

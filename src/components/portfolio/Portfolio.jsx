@@ -32,7 +32,7 @@ const data = [
     image: IMG3,
     title: "Casino CryptonBets",
     description: "Crypto casino website with Vue JS",
-    github: "https://github.com/cryptonbets",
+    github: "https://github.com/mrikaponka/crypton-front",
     demo: "https://cryptonbets.com/",
   },
   {
@@ -70,10 +70,10 @@ const data = [
   {
     id: 8,
     image: IMG8,
-    title: "Map App",
-    description: "Map app for sports exercises with JavaScript",
-    github: "https://github.com/13Nephilimm/Map-application-JS",
-    demo: "https://13nephilimm.github.io/Map-application-JS/",
+    title: "Affiliate Cryptonbets",
+    description: "Affiliate Panel for Cryptonbets with Vue JS",
+    github: "https://github.com/13Nephilimm/affiliate",
+    demo: "https://affiliate.cryptonbets.com/",
   },
   {
     id: 9,
