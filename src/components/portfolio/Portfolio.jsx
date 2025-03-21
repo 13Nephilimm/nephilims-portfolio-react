@@ -17,7 +17,7 @@ const data = [
     title: "Simple Steps",
     description: "Simple Steps official website with React JS",
     github: "https://github.com/13Nephilimm/Simple-Steps-React-Website",
-    demo: "https://simplesteps.ge",
+    demo: "https://simplestepss.netlify.app",
   },
   {
     id: 2,
