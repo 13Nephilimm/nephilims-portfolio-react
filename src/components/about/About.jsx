@@ -23,17 +23,17 @@ const About = () => {
             <article className="about-card">
               <FaAward className="about-icon" />
               <h5>Experience</h5>
-              <small>4+ Years Working</small>
+              <small>5+ Years Working</small>
             </article>
             <article className="about-card">
               <FiUsers className="about-icon" />
               <h5>Clients</h5>
-              <small>20+ Worldwide</small>
+              <small>25+ Worldwide</small>
             </article>
             <article className="about-card">
               <TiFolderOpen className="about-icon" />
               <h5>Projects</h5>
-              <small>30+ Completed</small>
+              <small>35+ Completed</small>
             </article>
           </div>
 
@@ -41,7 +41,7 @@ const About = () => {
             Hello! I am Jeko and I'm happy to share little information about
             myself. In the realm of web development, where innovation and
             creativity flourish, I, am a passionate and motivated individual
-            ready to embark on new challenges. At the tender age of 22, I bring
+            ready to embark on new challenges. At the tender age of 23, I bring
             a youthful energy and a burning desire to excel in the field. Driven
             by a relentless pursuit of excellence, I approach every task with
             unwavering determination, fueled by the belief that no goal is too
