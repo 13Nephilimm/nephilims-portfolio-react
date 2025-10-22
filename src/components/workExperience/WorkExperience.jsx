@@ -15,7 +15,7 @@ const Experience = () => {
             <article className="work-experience-details">
               <MdOutlineFlagCircle className="work-experience-details-icon" />
               <div>
-                <h4>Simple Steps (2022-2024)</h4>
+                <h4>Simple Steps (2022 March - 2024 May)</h4>
                 <small className="text-light">
                   Web Developer <br />
                 </small>
@@ -28,12 +28,27 @@ const Experience = () => {
             <article className="work-experience-details">
               <MdOutlineFlagCircle className="work-experience-details-icon" />
               <div>
-                <h4>CryptonBets (2024-Present)</h4>
+                <h4>CryptonBets (2024 June - 2025 July)</h4>
                 <small className="text-light">
                   Frontend Developer <br />
                 </small>
                 <small className="text-light">
                   Working with <strong>Vue JS, CSS, Tailwind, REST API</strong>
+                </small>
+              </div>
+            </article>
+            <article className="work-experience-details">
+              <MdOutlineFlagCircle className="work-experience-details-icon" />
+              <div>
+                <h4>CrocoBet (2025 July - Present)</h4>
+                <small className="text-light">
+                  Application Support Specialist <br />
+                </small>
+                <small className="text-light">
+                  Working with{" "}
+                  <strong>
+                    Grafana, Zabbix, Zipkin, GrayLog, Docker, Prometheus, Python
+                  </strong>
                 </small>
               </div>
             </article>
