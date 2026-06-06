@@ -4,7 +4,7 @@ import { BiCheck } from "react-icons/bi";
 
 const Services = () => {
   return (
-    <section id="services">
+    <section id="services" data-aos="fade-up">
       <h5>What I Offer</h5>
       <h2>Services</h2>
 
@@ -44,7 +44,7 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className="service-list-icon" />
-              <p>Basic Webistes With Wordpress</p>
+              <p>Basic Websites With Wordpress</p>
             </li>
             <li>
               <BiCheck className="service-list-icon" />
@@ -55,23 +55,28 @@ const Services = () => {
 
         <article className="service">
           <div className="service-head">
-            <h3>Video Editing</h3>
+            <h3>Game Development</h3>
           </div>
           <ul className="service-list">
             <li>
               <BiCheck className="service-list-icon" />
-              <p>Adobe Premiere Pro</p>
+              <p>Browser-Based 2D Games</p>
             </li>
             <li>
               <BiCheck className="service-list-icon" />
-              <p>Adobe After Effects</p>
+              <p>Pixi.js — High Performance Rendering</p>
             </li>
             <li>
               <BiCheck className="service-list-icon" />
-              <p>Tik-Tok/Instagram Reels</p>
+              <p>Phaser.js — Game Framework</p>
+            </li>
+            <li>
+              <BiCheck className="service-list-icon" />
+              <p>Interactive Web Experiences</p>
             </li>
           </ul>
         </article>
+
       </div>
     </section>
   );

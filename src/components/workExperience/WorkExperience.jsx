@@ -1,10 +1,11 @@
 import React from "react";
 import "./work-experience.css";
 import { MdOutlineFlagCircle } from "react-icons/md";
+import { workHistory } from "../../data/workData";
 
-const Experience = () => {
+const WorkExperience = () => {
   return (
-    <section id="workexperience">
+    <section id="workexperience" data-aos="fade-up">
       <h5>Jobs that I had/have</h5>
       <h2>My Work Experience</h2>
 
@@ -12,46 +13,20 @@ const Experience = () => {
         <div className="work-experience">
           <h3>Web Development</h3>
           <div className="work-experience-content">
-            <article className="work-experience-details">
-              <MdOutlineFlagCircle className="work-experience-details-icon" />
-              <div>
-                <h4>Simple Steps (2022 March - 2024 May)</h4>
-                <small className="text-light">
-                  Web Developer <br />
-                </small>
-                <small className="text-light">
-                  Working with{" "}
-                  <strong>HTML, CSS, JavaScript, React, Wordpress</strong>
-                </small>
-              </div>
-            </article>
-            <article className="work-experience-details">
-              <MdOutlineFlagCircle className="work-experience-details-icon" />
-              <div>
-                <h4>CryptonBets (2024 June - 2025 July)</h4>
-                <small className="text-light">
-                  Frontend Developer <br />
-                </small>
-                <small className="text-light">
-                  Working with <strong>Vue JS, CSS, Tailwind, REST API</strong>
-                </small>
-              </div>
-            </article>
-            <article className="work-experience-details">
-              <MdOutlineFlagCircle className="work-experience-details-icon" />
-              <div>
-                <h4>CrocoBet (2025 July - Present)</h4>
-                <small className="text-light">
-                  Application Support Specialist <br />
-                </small>
-                <small className="text-light">
-                  Working with{" "}
-                  <strong>
-                    Grafana, Zabbix, Zipkin, GrayLog, Docker, Prometheus, Python
-                  </strong>
-                </small>
-              </div>
-            </article>
+            {workHistory.map(({ id, company, period, role, stack }) => (
+              <article className="work-experience-details" key={id}>
+                <MdOutlineFlagCircle className="work-experience-details-icon" />
+                <div>
+                  <h4>{company} ({period})</h4>
+                  <small className="text-light">
+                    {role} <br />
+                  </small>
+                  <small className="text-light">
+                    Working with <strong>{stack}</strong>
+                  </small>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </div>
@@ -59,4 +34,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default WorkExperience;

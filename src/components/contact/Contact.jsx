@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "./contact.css";
 import { MdOutlineMail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
@@ -7,9 +7,11 @@ import emailjs from "emailjs-com";
 
 const Contact = () => {
   const form = useRef();
+  const [status, setStatus] = useState("idle"); // idle | sending | success | error
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setStatus("sending");
 
     emailjs
       .sendForm(
@@ -19,19 +21,18 @@ const Contact = () => {
         "0NA3KLjIitEBGl6tV"
       )
       .then(
-        (result) => {
-          console.log(result.text);
+        () => {
+          setStatus("success");
+          e.target.reset();
         },
-        (error) => {
-          console.log(error.text);
+        () => {
+          setStatus("error");
         }
       );
-
-    e.target.reset();
   };
 
   return (
-    <section id="contact">
+    <section id="contact" data-aos="fade-up">
       <h5>Get In Touch</h5>
       <h2>Contact Me</h2>
 
@@ -41,7 +42,7 @@ const Contact = () => {
             <MdOutlineMail className="contact-option-icon" />
             <h4>Email</h4>
             <h5>jekokharabadze@gmail.com</h5>
-            <a href="mailto:jekokharabadze@gmail.com" target="_blank">
+            <a href="mailto:jekokharabadze@gmail.com" target="_blank" rel="noopener noreferrer">
               Send a message
             </a>
           </article>
@@ -49,7 +50,7 @@ const Contact = () => {
             <RiMessengerLine className="contact-option-icon" />
             <h4>Messenger</h4>
             <h5>ჯეკო ხარაბაძე</h5>
-            <a href="https://m.me/xarabadzejeko" target="_blank">
+            <a href="https://m.me/xarabadzejeko" target="_blank" rel="noopener noreferrer">
               Send a message
             </a>
           </article>
@@ -57,7 +58,7 @@ const Contact = () => {
             <AiOutlinePhone className="contact-option-icon" />
             <h4>Phone Number</h4>
             <h5>+995 599 1000 69</h5>
-            <a href="#contact">Call Me</a>
+            <a href="tel:+995599100069">Call Me</a>
           </article>
         </div>
 
@@ -75,9 +76,15 @@ const Contact = () => {
             placeholder="Your Message"
             required
           ></textarea>
-          <button className="btn btn-primary" type="submit">
-            Send Message
+          <button className="btn btn-primary" type="submit" disabled={status === "sending"}>
+            {status === "sending" ? "Sending..." : "Send Message"}
           </button>
+          {status === "success" && (
+            <p className="form-feedback success">Message sent successfully!</p>
+          )}
+          {status === "error" && (
+            <p className="form-feedback error">Something went wrong. Please try again.</p>
+          )}
         </form>
       </div>
     </section>

@@ -40,6 +40,12 @@
   color: var(--color-primary);
 }
 
+.experience-gamedev {
+  grid-column: 1 / -1;
+  width: 50%;
+  margin: 0 auto;
+}
+
 /* ============== MEDIA QUERIES (MEDIUM DEVICES) ============== */
 @media screen and (max-width: 1024px) {
   .experience-container {
@@ -50,6 +56,10 @@
     width: 80%;
     padding: 2rem;
     margin: 0 auto;
+  }
+
+  .experience-gamedev {
+    width: 80%;
   }
 
   .experience-content {

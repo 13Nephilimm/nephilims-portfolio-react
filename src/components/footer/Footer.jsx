@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer>
       <a href="#" className="footer-logo">
-        Nephilim
+        Jax
       </a>
 
       <ul className="permalinks">
@@ -34,19 +34,33 @@ const Footer = () => {
       </ul>
 
       <div className="footer-socials">
-        <a href="https://www.facebook.com/xarabadzejeko/">
+        <a
+          href="https://www.facebook.com/xarabadzejeko/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <BsFacebook />
         </a>
-        <a href="https://www.instagram.com/jeko_kharabadze/">
+        <a
+          href="https://www.instagram.com/jeko_kharabadze/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <BsInstagram />
         </a>
-        <a href="https://www.youtube.com/channel/UC2hB6E3IQMBgHoqksBRugKg">
+        <a
+          href="https://www.youtube.com/channel/UC2hB6E3IQMBgHoqksBRugKg"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <BsYoutube />
         </a>
       </div>
 
       <div className="footer-copyright">
-        <small>2025 &copy; Website by Nephilim. All rights reserved.</small>
+        <small>
+          {new Date().getFullYear()} &copy; Website by Jax. All rights reserved.
+        </small>
       </div>
     </footer>
   );

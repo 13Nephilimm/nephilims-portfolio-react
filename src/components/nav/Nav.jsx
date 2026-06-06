@@ -50,7 +50,7 @@ const Nav = () => {
         onClick={() => {
           setActiveNav("#contact");
         }}
-        className={activeNav === "#cotact" ? "active" : ""}
+        className={activeNav === "#contact" ? "active" : ""}
       >
         <BiMessageSquareDetail />
       </a>

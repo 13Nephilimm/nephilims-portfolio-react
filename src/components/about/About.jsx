@@ -7,7 +7,7 @@ import { TiFolderOpen } from "react-icons/ti";
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" data-aos="fade-up">
       <h5>Get To Know</h5>
       <h2>About Me</h2>
 
@@ -23,7 +23,7 @@ const About = () => {
             <article className="about-card">
               <FaAward className="about-icon" />
               <h5>Experience</h5>
-              <small>5+ Years Working</small>
+              <small>4+ Years Working</small>
             </article>
             <article className="about-card">
               <FiUsers className="about-icon" />
@@ -38,18 +38,15 @@ const About = () => {
           </div>
 
           <p>
-            Hello! I am Jeko and I'm happy to share little information about
-            myself. In the realm of web development, where innovation and
-            creativity flourish, I, am a passionate and motivated individual
-            ready to embark on new challenges. At the tender age of 23, I bring
-            a youthful energy and a burning desire to excel in the field. Driven
-            by a relentless pursuit of excellence, I approach every task with
-            unwavering determination, fueled by the belief that no goal is too
-            lofty to achieve. As a team player, I thrive in collaborative
-            environments, actively engaging in meetings and embracing the power
-            of collective intelligence. Drawing upon my strong project planning
-            and organizational skills, I meticulously strategize to ensure
-            seamless execution and deliver results that exceed expectations
+            I'm Jeko, a web developer based in Georgia with 4+ years of
+            professional experience. I've worked across the full frontend
+            stack — React, Vue.js, Next.js — and shipped real products for
+            companies ranging from marketing agencies to crypto betting
+            platforms. Currently at CrocoBet as an Application Support
+            Specialist, working with Grafana, Docker, Prometheus, and Zipkin
+            to monitor production systems at scale. I enjoy writing clean,
+            maintainable code and building things that users actually enjoy
+            using.
           </p>
 
           <a href="#contact" className="btn btn-primary">
